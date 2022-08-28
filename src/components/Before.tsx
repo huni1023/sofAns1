@@ -13,7 +13,7 @@ const Before = () => {
   const navigate = useNavigate()
   const strObj = JSON.stringify(obj)
 
-  const onClick = () => {
+  const handleClick = () => {
       setObj({yapp: 1})
       navigate('/after')
   }
@@ -21,7 +21,7 @@ const Before = () => {
   return (
     <div>
         <div>Current Sample: {strObj}</div>
-        <Yapp onClick={onClick}>Click me.</Yapp>
+        <Yapp onClick={handleClick}>Click me.</Yapp>
     </div>
   )
 }
